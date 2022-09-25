@@ -8,6 +8,6 @@ import lombok.Setter;
 public class GreetingsResponseDto {
 
     private boolean success = true;
-    
+
     private String message;
 }
