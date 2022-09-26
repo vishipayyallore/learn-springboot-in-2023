@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "d3f32070-3e87-4e5b-a89b-736fc98c05ef",
+		"name": "Spring Boot - Greetings Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "185209"
+	},
+	"item": [
+		{
+			"name": "GET /api/v1/greetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/greetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"greetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/v1/greetings/greet?userName=Sri Varu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/greetings/greet?userName=Sri Varu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"greetings",
+						"greet"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Sri Varu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
