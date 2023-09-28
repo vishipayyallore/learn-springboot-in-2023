@@ -1,4 +1,4 @@
-package com.sv.awsccdemo.awsccdemo;
+package com.sv.awsccdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
