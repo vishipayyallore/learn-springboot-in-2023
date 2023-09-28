@@ -15,10 +15,10 @@ public class GreetingsController {
 
     // http://localhost:8081/api/v1/greetings
     @GetMapping("")
-    public ResponseEntity<GreetingsResponseDto> welcome(){
+    public ResponseEntity<GreetingsResponseDto> welcome() {
 
         GreetingsResponseDto greetingsResponseDto = new GreetingsResponseDto();
-        greetingsResponseDto.setMessage("Welcome to the Spring Boot world of Azure Containers!");
+        greetingsResponseDto.setMessage("Welcome to the Spring Boot world of AWS Code Commit !");
 
         ResponseEntity<GreetingsResponseDto> responseEntity = new ResponseEntity<>(greetingsResponseDto, HttpStatus.OK);
         return responseEntity;
@@ -26,10 +26,10 @@ public class GreetingsController {
 
     // http://localhost:8081/api/v1/greetings/greet?userName=SriVaru
     @GetMapping("/greet")
-    public ResponseEntity<GreetingsResponseDto> greetUser(@RequestParam("userName") String userName){
+    public ResponseEntity<GreetingsResponseDto> greetUser(@RequestParam("userName") String userName) {
 
         GreetingsResponseDto greetingsResponseDto = new GreetingsResponseDto();
-        greetingsResponseDto.setMessage(userName + ", Welcome to the Spring Boot world of Azure Containers!");
+        greetingsResponseDto.setMessage(userName + ", Welcome to the Spring Boot world of AWS Code Commit !");
 
         ResponseEntity<GreetingsResponseDto> responseEntity = new ResponseEntity<>(greetingsResponseDto, HttpStatus.OK);
         return responseEntity;
